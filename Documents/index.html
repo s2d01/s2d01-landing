@@ -56,10 +56,33 @@
     </div>
    
    <!-- <a href="about.html" class="about-link fade-in-up-delayed">About S2D01</a> -->
-
+      <br>
     <div class="made-with fade-in-up-delayed">
       Made with sound & soul in Florence
     </div>
+    <!-- Footer Section -->
+   
+      <div class="footer-contact">
+        <a href="mailto:info@s2d01.org" class="contact-link">info@s2d01.org</a>
+        <span class="divider">|</span>
+        <a href="about.html" class="contact-link">About S2D01</a>
+      </div>
+    </div>
+  </div> 
   </div>
-</body>
+  <!-- Hidden elements for SEO -->
+  <div class="visually-hidden">
+    <h2>Electronic Music Producer</h2>
+    <p>S2D01 creates immersive electronic music experiences blending ambient textures with rhythmic elements.</p>
+  </div>
+  <!-- Small JS for disabled links -->
+  <script>
+    document.querySelectorAll('.disabled-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('This section is coming soon!');
+      });
+    });
+  </script>
+  </body>
 </html>
