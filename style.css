@@ -126,12 +126,12 @@ main,
 }
 
 .hero-section {
-  min-height: min(720px, calc(100vh - 132px));
+  min-height: min(620px, calc(100vh - 160px));
   display: grid;
   grid-template-columns: minmax(0, 1.18fr) minmax(280px, 0.82fr);
   gap: clamp(28px, 5vw, 72px);
   align-items: center;
-  padding: 28px 0 54px;
+  padding: 24px 0 28px;
 }
 
 .hero-copy {
@@ -320,6 +320,10 @@ h3 {
 .about-strip {
   padding: clamp(48px, 8vw, 92px) 0;
   border-top: 1px solid var(--line);
+}
+
+.front-page .practice-section {
+  padding-top: clamp(24px, 4vw, 44px);
 }
 
 .feature-section {
@@ -882,7 +886,7 @@ body:not(.home-page) h1 {
 
   .hero-section {
     min-height: auto;
-    padding: 30px 0 46px;
+    padding: 30px 0 34px;
   }
 
   .about-hero {
