@@ -246,13 +246,13 @@ h3 {
 
 .hero-practice-list {
   display: grid;
-  gap: 10px;
+  gap: 14px;
   list-style: none;
 }
 
 .hero-practice-list li {
-  padding: 12px 0;
-  border-bottom: 1px solid var(--line);
+  padding: 4px 0;
+  border-bottom: 0;
   color: var(--text);
   font-size: clamp(1.05rem, 2vw, 1.28rem);
   font-weight: 620;
@@ -905,11 +905,11 @@ body:not(.home-page) h1 {
   }
 
   .hero-practice-list {
-    gap: 6px;
+    gap: 12px;
   }
 
   .hero-practice-list li {
-    padding: 9px 0;
+    padding: 3px 0;
   }
 
   .practice-grid {
