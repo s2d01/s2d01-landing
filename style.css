@@ -135,6 +135,7 @@ main,
 }
 
 .hero-copy {
+  min-width: 0;
   max-width: 760px;
 }
 
@@ -186,6 +187,17 @@ h3 {
   font-weight: 400;
   line-height: 1.12;
   max-width: 920px;
+}
+
+.moods-logo-title {
+  margin-bottom: 22px;
+}
+
+.moods-logo-title img {
+  display: block;
+  width: min(340px, 100%);
+  height: auto;
+  filter: drop-shadow(0 0 18px rgba(116, 216, 189, 0.14));
 }
 
 .hero-text,
@@ -549,7 +561,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, 240px);
   gap: 10px 12px;
-  justify-content: start;
+  justify-content: center;
 }
 
 .link-list a {
@@ -942,7 +954,15 @@ body:not(.home-page) h1 {
   }
 
   .hero-headline {
-    font-size: 1.6rem;
+    max-width: 100%;
+    font-size: 1.42rem;
+    line-height: 1.18;
+  }
+
+  .hero-text,
+  .section-intro,
+  .feature-lead {
+    max-width: 100%;
   }
 
   .cta-row,
