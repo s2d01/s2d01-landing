@@ -432,8 +432,8 @@ h3 {
   grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.78fr);
   gap: clamp(28px, 5vw, 72px);
   align-items: center;
-  padding: 28px 0 54px;
-  min-height: min(620px, calc(100vh - 132px));
+  padding: 24px 0 28px;
+  min-height: min(430px, calc(100vh - 160px));
 }
 
 .about-hero h1 {
@@ -476,7 +476,7 @@ h3 {
 .about-page .about-text-section {
   display: grid;
   gap: 18px;
-  padding: clamp(68px, 9vw, 112px) 0;
+  padding: clamp(48px, 8vw, 92px) 0;
 }
 
 .about-page .about-text-section h2 {
@@ -501,12 +501,12 @@ h3 {
 }
 
 .about-page .feature-section {
-  padding: clamp(68px, 9vw, 112px) 0;
+  padding: clamp(48px, 8vw, 92px) 0;
 }
 
 .about-page .about-closing .feature-grid {
-  grid-template-columns: minmax(620px, 0.95fr) minmax(0, 1fr);
-  gap: clamp(28px, 4vw, 64px);
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: clamp(26px, 6vw, 84px);
 }
 
 .about-page .feature-grid p + p {
@@ -522,7 +522,7 @@ h3 {
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: clamp(28px, 7vw, 92px);
   align-items: end;
-  padding: clamp(58px, 10vw, 120px) 0 clamp(42px, 7vw, 78px);
+  padding: clamp(58px, 8vw, 96px) 0 clamp(42px, 7vw, 78px);
 }
 
 .links-hero h1 {
@@ -596,7 +596,7 @@ h3 {
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: clamp(28px, 7vw, 92px);
   align-items: end;
-  padding: clamp(58px, 10vw, 120px) 0 clamp(42px, 7vw, 78px);
+  padding: clamp(58px, 8vw, 96px) 0 clamp(42px, 7vw, 78px);
 }
 
 .mixes-hero h1 {
@@ -891,7 +891,7 @@ body:not(.home-page) h1 {
 
   .about-hero {
     min-height: auto;
-    padding: 30px 0 46px;
+    padding: 30px 0 34px;
   }
 
   .about-hero-copy {
@@ -988,7 +988,7 @@ body:not(.home-page) h1 {
   }
 
   .about-hero {
-    padding: 36px 0 50px;
+    padding: 30px 0 34px;
   }
 
   .about-hero h1 {
