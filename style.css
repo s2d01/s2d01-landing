@@ -517,6 +517,74 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.contact-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.78fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+  min-height: min(430px, calc(100vh - 160px));
+  padding: 24px 0 28px;
+}
+
+.contact-hero h1 {
+  font-size: clamp(3.8rem, 12vw, 8.4rem);
+  line-height: 0.86;
+  margin-bottom: 0;
+}
+
+.contact-copy {
+  display: grid;
+  gap: 22px;
+  min-width: 0;
+  max-width: 620px;
+}
+
+.contact-copy p {
+  color: var(--muted);
+  font-size: clamp(1.05rem, 1.75vw, 1.2rem);
+  max-width: 680px;
+}
+
+.contact-email {
+  color: var(--text);
+  font-size: clamp(1.45rem, 3.2vw, 2.35rem);
+  font-weight: 620;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+.contact-email:hover,
+.contact-email:focus-visible {
+  color: var(--petrol);
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+}
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 10px 18px;
+  background: rgba(3, 8, 7, 0.54);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--text);
+  font-weight: 620;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.contact-links a:hover,
+.contact-links a:focus-visible {
+  background: rgba(20, 63, 55, 0.42);
+  border-color: var(--line-strong);
+}
+
 .links-hero {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -885,6 +953,7 @@ body:not(.home-page) h1 {
 
   .hero-section,
   .about-hero,
+  .contact-hero,
   .links-hero,
   .mixes-hero,
   .feature-grid,
@@ -904,7 +973,13 @@ body:not(.home-page) h1 {
     padding: 30px 0 34px;
   }
 
-  .about-hero-copy {
+  .contact-hero {
+    min-height: auto;
+    padding: 30px 0 34px;
+  }
+
+  .about-hero-copy,
+  .contact-copy {
     max-width: 760px;
   }
 
@@ -1001,8 +1076,21 @@ body:not(.home-page) h1 {
     padding: 30px 0 34px;
   }
 
+  .contact-hero {
+    padding: 30px 0 34px;
+  }
+
   .about-hero h1 {
     font-size: clamp(3rem, 17vw, 4.8rem);
+  }
+
+  .contact-hero h1 {
+    font-size: clamp(3.2rem, 19vw, 5rem);
+  }
+
+  .contact-links {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .links-hero {
