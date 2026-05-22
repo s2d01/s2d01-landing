@@ -551,9 +551,9 @@ h3 {
 
 .link-group {
   display: grid;
-  grid-template-columns: minmax(170px, 0.34fr) minmax(0, 1fr);
-  gap: clamp(24px, 5vw, 70px);
-  padding: clamp(28px, 5vw, 52px) 0;
+  grid-template-columns: minmax(170px, 0.28fr) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 56px);
+  padding: clamp(30px, 4.6vw, 48px) 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -561,11 +561,21 @@ h3 {
   border-bottom: 0;
 }
 
+.links-page .section-kicker {
+  color: rgba(241, 244, 239, 0.72);
+  font-size: 1.16rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.25;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
 .link-list {
   display: grid;
-  grid-template-columns: repeat(2, 240px);
+  grid-template-columns: repeat(2, minmax(220px, 280px));
   gap: 10px 12px;
-  justify-content: center;
+  justify-content: start;
 }
 
 .link-list a {
