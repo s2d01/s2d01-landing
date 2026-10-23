@@ -1,34 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11465969104"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'AW-11465969104');
-    gtag('config', 'G-8R69M3DQYM');
-  </script>
-
-  <!-- Event snippet for Clic su Link Spotify conversion page -->
-  <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-        'send_to': 'AW-11465969104/1XtjCOeB9e4aENCbs9sq',
-        'value': 1.0,
-        'currency': 'EUR',
-        'event_callback': callback
-      });
-      return false;
-    }
-  </script>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,6 +23,8 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512.png">
   <link rel="shortcut icon" href="/assets/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/consent.css">
+  <script defer src="/consent.js"></script>
 </head>
 <body class="home-page links-page">
   <header class="site-top" aria-label="Main navigation">
@@ -93,7 +68,7 @@
         <div class="link-list">
           <a href="https://s2d01.bandcamp.com/" target="_blank" rel="noopener noreferrer">Bandcamp</a>
           <a href="https://soundcloud.com/s2d01" target="_blank" rel="noopener noreferrer">SoundCloud</a>
-          <a href="https://open.spotify.com/intl-it/artist/1Dg4o5W9VbIA60c9ONYdAZ?si=sGmPsQcBSxCUlWmxyNsasw" onclick="gtag('event', 'click_spotify', {'send_to': 'AW-11465969104/1XtjCOeB9e4aENCbs9sq', 'value': 1.0, 'currency': 'EUR'});" target="_blank" rel="noopener noreferrer">Spotify</a>
+          <a href="https://open.spotify.com/intl-it/artist/1Dg4o5W9VbIA60c9ONYdAZ?si=sGmPsQcBSxCUlWmxyNsasw" target="_blank" rel="noopener noreferrer">Spotify</a>
           <a href="https://music.apple.com/us/artist/s2d01/1676524852" target="_blank" rel="noopener noreferrer">Apple Music</a>
           <a href="https://music.youtube.com/channel/UCOk6UK6Yyxi0hL_vuGMUqHA" target="_blank" rel="noopener noreferrer">YouTube Music</a>
           <a href="https://www.mixcloud.com/scappelli3/" target="_blank" rel="noopener noreferrer">Mixcloud</a>
@@ -140,5 +115,6 @@
       <p class="footer-copyright">Copyright © 2026 S2D01. All rights reserved.</p>
     </div>
   </footer>
+<p class="consent-settings-row"><button type="button" id="s2d01-cookie-settings" class="consent-settings">Cookie preferences</button></p>
 </body>
 </html>
