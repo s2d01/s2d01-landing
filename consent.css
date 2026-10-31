@@ -10,6 +10,7 @@
 .s2-consent button { padding: 12px 16px; border: 1px solid #bbb; border-radius: 7px; background: #25282c; color: #fff; font: inherit; cursor: pointer; }
 .s2-consent-actions button { flex: 1 1 180px; }
 .s2-consent button:hover { background: #383d43; }
-.consent-settings-row { text-align: center; padding: 8px 16px 20px; }
-.consent-settings { background: transparent; border: 0; color: inherit; font: inherit; text-decoration: underline; cursor: pointer; }
+.consent-settings-row { width: min(1120px, 100%); margin: 0 auto; padding: 0 0 22px; text-align: left; }
+.consent-settings { background: transparent; border: 0; color: #8b9992; font: inherit; font-size: 0.84rem; line-height: 1.45; text-decoration: none; cursor: pointer; transition: color 0.2s ease; }
+.consent-settings:hover { color: var(--petrol); }
 .s2-consent button:focus-visible, .s2-consent summary:focus-visible, .consent-settings:focus-visible { outline: 3px solid #b5d9ff; outline-offset: 3px; }

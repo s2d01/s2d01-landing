@@ -450,6 +450,10 @@ h3 {
   max-width: 520px;
 }
 
+.technology-page .about-hero {
+  column-gap: clamp(80px, 12vw, 180px);
+}
+
 .about-hero-copy p,
 .about-text-section p {
   color: var(--muted);
@@ -507,6 +511,14 @@ h3 {
 .about-page .about-closing .feature-grid {
   grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
   gap: clamp(26px, 6vw, 84px);
+}
+
+.about-page .about-closing .feature-grid p {
+  font-size: clamp(1rem, 1.65vw, 1.16rem);
+}
+
+.technology-page .feature-grid p {
+  font-size: clamp(1rem, 1.65vw, 1.16rem);
 }
 
 .about-page .feature-grid p + p {
@@ -772,7 +784,19 @@ h3 {
 }
 
 .footer-identity {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
   font-weight: 620;
+}
+
+.footer-identity .consent-settings {
+  color: #8b9992;
+  font-size: 0.84rem;
+  font-weight: 400;
+  line-height: 1.45;
+  text-align: left;
 }
 
 .footer-column {
@@ -799,6 +823,11 @@ h3 {
   max-width: none;
   text-align: right;
   white-space: nowrap;
+}
+
+.footer-identity .consent-settings:hover,
+.footer-identity .consent-settings:focus-visible {
+  color: var(--petrol);
 }
 
 /* ===== LEGACY LINK HUB SUPPORT ===== */
