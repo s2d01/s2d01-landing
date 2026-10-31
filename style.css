@@ -119,10 +119,13 @@ main,
 }
 
 .top-nav a:hover,
-.top-nav a:focus-visible,
+.top-nav a:focus-visible {
+  color: var(--text);
+}
+
 .text-link:hover,
 .text-link:focus-visible {
-  color: var(--text);
+  color: var(--petrol);
 }
 
 .hero-section {
