@@ -24,7 +24,7 @@
     info: 'Simone Cappelli (S2D01) usa Google Analytics 4 per misurare visite e Google Ads per misurare le conversioni dei link Spotify. I servizi sono forniti da Google. Le due finalità si possono scegliere separatamente. Non inviamo contenuti dei moduli. La scelta viene conservata in questo browser per 180 giorni e può essere modificata da “Preferenze cookie”. I cookie analitici sono impostati con durata massima di 180 giorni.',
     analytics: 'Statistiche (Google Analytics)', ads: 'Misurazione pubblicitaria (Google Ads)',
     reject: 'Rifiuta tutto', accept: 'Accetta tutto', save: 'Salva la selezione',
-    privacy: 'Informativa privacy di Google', contact: 'Per informazioni'
+    privacy: 'Informativa privacy di Google', sitePrivacy: 'Informativa privacy S2D01', contact: 'Per informazioni'
   } : {
     title: 'Optional cookies',
     intro: 'May we use cookies for Google Analytics statistics and Google Ads advertising measurement? Both stay off until you choose. The website works if you reject.',
@@ -32,14 +32,14 @@
     info: 'Simone Cappelli (S2D01) uses Google Analytics 4 to measure visits and Google Ads to measure Spotify link conversions. These services are provided by Google. You can choose each purpose separately. We do not send form contents. Your choice is stored in this browser for 180 days and can be changed using “Cookie preferences”. Analytics cookies have a maximum lifetime of 180 days.',
     analytics: 'Statistics (Google Analytics)', ads: 'Advertising measurement (Google Ads)',
     reject: 'Reject all', accept: 'Accept all', save: 'Save selection',
-    privacy: 'Google privacy policy', contact: 'For questions'
+    privacy: 'Google privacy policy', sitePrivacy: 'S2D01 privacy notice', contact: 'For questions'
   };
   const panel = document.createElement('section');
   panel.className = 's2-consent';
   panel.setAttribute('aria-labelledby', 's2-consent-heading');
   panel.innerHTML = `<h2 id="s2-consent-heading">${text.title}</h2><p>${text.intro}</p>
     <details><summary>${text.details}</summary><p>${text.info}</p>
-    <p>${text.contact}: <a href="mailto:info@s2d01.org">info@s2d01.org</a>. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">${text.privacy}</a>.</p>
+    <p>${text.contact}: <a href="mailto:info@s2d01.org">info@s2d01.org</a>. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">${text.privacy}</a>. <a href="${it ? '/it/privacy/' : '/privacy/'}">${text.sitePrivacy}</a>.</p>
     <label><input type="checkbox" id="s2-analytics">${text.analytics}</label>
     <label><input type="checkbox" id="s2-ads">${text.ads}</label>
     <button type="button" id="s2-save">${text.save}</button></details>

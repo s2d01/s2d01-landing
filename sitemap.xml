@@ -19,6 +19,9 @@
     <loc>https://s2d01.org/contact</loc>
   </url>
   <url>
+    <loc>https://s2d01.org/privacy/</loc>
+  </url>
+  <url>
     <loc>https://s2d01.org/it/</loc>
   </url>
   <url>
@@ -35,5 +38,8 @@
   </url>
   <url>
     <loc>https://s2d01.org/it/contact</loc>
+  </url>
+  <url>
+    <loc>https://s2d01.org/it/privacy/</loc>
   </url>
 </urlset>
